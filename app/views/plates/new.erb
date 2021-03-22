@@ -1,0 +1,8 @@
+<form method="post" action="/plates">
+    <input type="hidden" name="plate[user_id]" value="<%= current_user.id %>">
+    Plate Name: <input type="text" name="plate[name]">
+    Category: <input type="text" name="plate[plate_type]">
+    Ingredients: <input type="text" name="plate[ingredients]">
+    <input type="submit" value="Create Plate!">
+
+</form>

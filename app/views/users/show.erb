@@ -1,0 +1,9 @@
+<h1>welcome <%=@user.username %></h1>
+
+<h1>Here are all your meals!</h1>
+<a href="/plates/new">Create New Plate</a><br>
+<br>
+<ul><% @plates.each do |t|%>
+    <li><a href="/plates/<%=t.id%>"><%= t.name %></a></li><br>
+    <% end %></ul>
+

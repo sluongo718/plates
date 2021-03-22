@@ -1,0 +1,10 @@
+<h1><%= @plate.name %></h1><br>
+<h4>type of plate: <%= @plate.plate_type %></h4><br>
+<h4>ingredients: <%= @plate.ingredients %></h4><br>
+
+<a href="/plates/<%=@plate.id%>/edit">Edit Plate</a>
+<form method="post" action="/plates/<%= @plate.id %>">
+<input type="hidden" name="_method" value="DELETE">
+<input type="submit" value="Delete Plate">
+</form>
+<a href="/users/<%=current_user.id%>">Back to your plates</a>
